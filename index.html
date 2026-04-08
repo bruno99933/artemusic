@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte Music | Escola de Música de Elite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#FACC15',
+                        dark: '#050505',
+                        zincCustom: '#121212',
+                    },
+                    fontFamily: {
+                        header: ['Syncopate', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-pattern {
+            background-image: radial-gradient(rgba(250, 204, 21, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(250, 204, 21, 0.3);
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-xl border-b border-white/5">
+        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="font-header text-lg text-brand tracking-tighter">ARTE MUSIC</div>
+            <div class="hidden lg:flex gap-8 text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400">
+                <a href="#cursos" class="hover:text-brand transition">Cursos</a>
+                <a href="#metodo" class="hover:text-brand transition">Método</a>
+                <a href="#depoimentos" class="hover:text-brand transition">Comunidade</a>
+                <a href="#faq" class="hover:text-brand transition">FAQ</a>
+            </div>
+            <a href="#" class="bg-brand text-black font-black text-[11px] px-8 py-3 rounded-full uppercase tracking-widest hover:scale-105 transition-all shadow-[0_0_20px_rgba(250,204,21,0.2)]">
+                Agendar Teste
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center pt-20 bg-pattern">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 relative z-10">
+            <div class="flex flex-col justify-center space-y-8">
+                <div class="inline-flex items-center gap-2 bg-zincCustom border border-white/10 w-fit px-4 py-1.5 rounded-full">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+                    </span>
+                    <span class="text-brand text-[10px] font-black uppercase tracking-widest">Inscrições Abertas 2026</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black uppercase leading-[0.85] tracking-tighter">
+                    TRANSFORME <br> <span class="text-brand italic">RUÍDO</span> EM <br> <span class="text-stroke">LEGADO.</span>
+                </h1>
+                <p class="text-zinc-400 text-lg md:text-xl max-w-lg leading-relaxed font-light">
+                    A primeira escola de música com foco em **performance de palco** e **produção artística**. Não apenas aprenda a tocar; aprenda a ser um artista.
+                </p>
+                <div class="flex gap-4">
+                    <button class="bg-brand text-black font-black py-5 px-12 rounded-2xl text-sm uppercase tracking-widest hover:bg-white transition-all">
+                        Matricule-se
+                    </button>
+                </div>
+            </div>
+            
+            <div class="relative hidden lg:block">
+                <div class="absolute inset-0 bg-brand/10 blur-[120px] rounded-full"></div>
+                <div class="relative grid grid-cols-2 gap-4 h-[600px]">
+                    <div class="bg-zinc-900 rounded-3xl overflow-hidden mt-12">
+                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?q=80&w=800" class="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Guitarrista">
+                    </div>
+                    <div class="bg-zinc-900 rounded-3xl overflow-hidden mb-12">
+                        <img src="https://images.unsplash.com/photo-1552422535-c45813c61732?q=80&w=800" class="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Piano">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 border-y border-white/5 bg-zincCustom/50">
+        <div class="container mx-auto px-6 flex flex-wrap justify-between gap-8 text-center md:text-left">
+            <div>
+                <h4 class="text-3xl font-black text-brand italic leading-none">500+</h4>
+                <p class="text-zinc-500 text-[10px] uppercase font-bold tracking-[.3em] mt-2">Alunos Ativos</p>
+            </div>
+            <div>
+                <h4 class="text-3xl font-black text-brand italic leading-none">12+</h4>
+                <p class="text-zinc-500 text-[10px] uppercase font-bold tracking-[.3em] mt-2">Salas Acústicas</p>
+            </div>
+            <div>
+                <h4 class="text-3xl font-black text-brand italic leading-none">15</h4>
+                <p class="text-zinc-500 text-[10px] uppercase font-bold tracking-[.3em] mt-2">Mestres Renomados</p>
+            </div>
+            <div>
+                <h4 class="text-3xl font-black text-brand italic leading-none">01</h4>
+                <p class="text-zinc-500 text-[10px] uppercase font-bold tracking-[.3em] mt-2">Estúdio Profissional</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodo" class="py-32 px-6">
+        <div class="container mx-auto grid lg:grid-cols-2 gap-20 items-center">
+            <div class="order-2 lg:order-1">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="p-8 bg-zincCustom rounded-3xl border border-white/5 hover:border-brand/30 transition-all">
+                        <div class="text-brand mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 uppercase italic">Prática Total</h4>
+                        <p class="text-zinc-500 text-sm leading-relaxed">Teoria aplicada diretamente no instrumento. Aprenda o que você realmente vai usar no palco.</p>
+                    </div>
+                    <div class="p-8 bg-zincCustom rounded-3xl border border-white/5 hover:border-brand/30 transition-all mt-6 sm:mt-12">
+                        <div class="text-brand mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 uppercase italic">Estúdio Aberto</h4>
+                        <p class="text-zinc-500 text-sm leading-relaxed">Nossos alunos têm horas mensais inclusas para gravar seus próprios projetos e covers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 space-y-8 text-right">
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter">O MÉTODO <br> <span class="text-brand italic font-light">REVOLUCIONÁRIO.</span></h2>
+                <p class="text-zinc-400 text-lg font-light leading-relaxed">Esqueça os métodos engessados. Na Arte Music, cada aluno segue um **Mapa de Desenvolvimento** personalizado com base no seu estilo musical preferido.</p>
+                <div class="h-1 w-20 bg-brand ml-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos" class="py-32 px-6 bg-zincCustom/30 relative overflow-hidden">
+    <div class="absolute -bottom-16 -left-16 text-[150px] font-header text-stroke opacity-10 select-none pointer-events-none leading-none">
+        PLAY
+    </div>
+
+    <div class="container mx-auto relative z-10">
+        <h2 class="text-center text-4xl md:text-6xl font-black uppercase tracking-tighter mb-20 leading-none">
+            ESCOLHA SEU <br> <span class="text-stroke">INSTRUMENTO.</span>
+        </h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="group bg-zincCustom p-10 rounded-[40px] border border-white/5 hover:bg-brand transition-all duration-500 cursor-pointer flex flex-col h-full shadow-2xl hover:shadow-brand/20">
+                <div class="text-5xl mb-8 group-hover:scale-110 transition-transform duration-500 origin-left">🎸</div>
+                <h3 class="text-2xl font-black uppercase italic mb-4 group-hover:text-black tracking-tight leading-none">Guitarra & <br>Violão</h3>
+                <p class="text-zinc-500 text-sm group-hover:text-black/70 flex-grow">Do dedilhado clássico ao solo virtuoso. Técnica, improvisação e teoria aplicada.</p>
+                <div class="mt-10 flex items-center gap-2 text-[11px] font-black uppercase tracking-widest text-brand group-hover:text-black">
+                    Saber Mais <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+            </div>
+
+            <div class="group bg-zincCustom p-10 rounded-[40px] border border-white/5 hover:bg-brand transition-all duration-500 cursor-pointer flex flex-col h-full shadow-2xl hover:shadow-brand/20">
+                <div class="text-5xl mb-8 group-hover:scale-110 transition-transform duration-500 origin-left">🎤</div>
+                <h3 class="text-2xl font-black uppercase italic mb-4 group-hover:text-black tracking-tight leading-none">Vocal <br>Performance</h3>
+                <p class="text-zinc-500 text-sm group-hover:text-black/70 flex-grow">Domine sua voz. Foco total em técnica vocal, respiração e presença cênica.</p>
+                <div class="mt-10 flex items-center gap-2 text-[11px] font-black uppercase tracking-widest text-brand group-hover:text-black">
+                    Saber Mais <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+            </div>
+
+            <div class="group bg-zincCustom p-10 rounded-[40px] border border-white/5 hover:bg-brand transition-all duration-500 cursor-pointer flex flex-col h-full shadow-2xl hover:shadow-brand/20">
+                <div class="text-5xl mb-8 group-hover:scale-110 transition-transform duration-500 origin-left">🎹</div>
+                <h3 class="text-2xl font-black uppercase italic mb-4 group-hover:text-black tracking-tight leading-none">Piano & <br>Teclas</h3>
+                <p class="text-zinc-500 text-sm group-hover:text-black/70 flex-grow">A base da música. Do erudito ao sintetizador moderno e produção musical.</p>
+                <div class="mt-10 flex items-center gap-2 text-[11px] font-black uppercase tracking-widest text-brand group-hover:text-black">
+                    Saber Mais <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+            </div>
+
+            <div class="group bg-zincCustom p-10 rounded-[40px] border border-white/5 hover:bg-brand transition-all duration-500 cursor-pointer flex flex-col h-full shadow-2xl hover:shadow-brand/20">
+                <div class="text-5xl mb-8 group-hover:scale-110 transition-transform duration-500 origin-left">🥁</div>
+                <h3 class="text-2xl font-black uppercase italic mb-4 group-hover:text-black tracking-tight leading-none">Bateria & <br>Ritmo</h3>
+                <p class="text-zinc-500 text-sm group-hover:text-black/70 flex-grow">O coração da banda. Domine o tempo, a pulsação e a dinâmica rítmica.</p>
+                <div class="mt-10 flex items-center gap-2 text-[11px] font-black uppercase tracking-widest text-brand group-hover:text-black">
+                    Saber Mais <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="depoimentos" class="py-32 px-6 overflow-hidden">
+        <div class="container mx-auto">
+            <h2 class="text-left text-4xl md:text-5xl font-black uppercase tracking-tighter mb-16">O QUE DIZEM <br> <span class="text-brand italic">NOSSOS ARTISTAS.</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-10 bg-zincCustom rounded-3xl relative">
+                    <div class="absolute -top-4 -right-4 text-brand text-6xl opacity-20 font-header">"</div>
+                    <p class="text-zinc-400 italic mb-8">"Nunca imaginei que tocaria em um palco em apenas 6 meses. O suporte da Arte Music é incomparável."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-brand rounded-full"></div>
+                        <div>
+                            <p class="font-bold uppercase text-xs">Ricardo S.</p>
+                            <p class="text-[10px] text-zinc-600 uppercase font-black">Aluno de Guitarra</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-32 px-6 bg-zincCustom/50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-center text-4xl font-black mb-20 uppercase tracking-tighter italic">DÚVIDAS <span class="text-brand">FREQUENTES.</span></h2>
+            <div class="space-y-4">
+                <details class="group bg-dark p-6 rounded-2xl border border-white/5 cursor-pointer open:border-brand/50 transition-all">
+                    <summary class="flex justify-between items-center font-bold uppercase text-xs tracking-widest">
+                        Preciso ter instrumento para começar?
+                        <span class="text-brand group-open:rotate-180 transition-transform">↓</span>
+                    </summary>
+                    <p class="mt-6 text-zinc-500 text-sm font-light">Não! Para as aulas na escola, nós fornecemos os melhores instrumentos do mercado. Você só precisa trazer sua vontade de aprender.</p>
+                </details>
+                <details class="group bg-dark p-6 rounded-2xl border border-white/5 cursor-pointer open:border-brand/50 transition-all">
+                    <summary class="flex justify-between items-center font-bold uppercase text-xs tracking-widest">
+                        As aulas são individuais ou em grupo?
+                        <span class="text-brand group-open:rotate-180 transition-transform">↓</span>
+                    </summary>
+                    <p class="mt-6 text-zinc-500 text-sm font-light">Oferecemos ambas as modalidades. Aulas individuais para foco técnico e aulas de prática de banda para integração social.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-40 bg-brand text-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 font-header text-[250px] font-black select-none pointer-events-none -bottom-20 leading-none">
+            MUSIC
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-8 italic">VAMOS CRIAR <br> HISTÓRIA?</h2>
+            <button class="bg-black text-white font-black py-6 px-16 rounded-2xl uppercase tracking-[.3em] text-lg hover:scale-110 transition-transform shadow-2xl">
+                Agendar Teste Grátis
+            </button>
+        </div>
+    </section>
+
+    <footer class="py-20 bg-dark border-t border-white/5 text-center md:text-left">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div class="col-span-2">
+                <div class="font-header text-2xl text-brand mb-6">ARTE MUSIC</div>
+                <p class="text-zinc-500 max-w-sm text-sm">Onde a técnica encontra a alma. Junte-se à elite musical de 2026.</p>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase text-[10px] tracking-widest mb-6 text-white">Contato</h5>
+                <ul class="text-zinc-500 text-sm space-y-4 font-light">
+                    <li>Rua da Harmonia, 440</li>
+                    <li>Belo Horizonte, MG</li>
+                    <li>(31) 98888-7777</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase text-[10px] tracking-widest mb-6 text-white">Social</h5>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-brand transition cursor-pointer">IG</div>
+                    <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-brand transition cursor-pointer">YT</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
